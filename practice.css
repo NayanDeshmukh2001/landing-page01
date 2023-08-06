@@ -1,0 +1,116 @@
+@font-face {
+  font-family: gsr;
+  src: url(./GeneralSans-Regular.otf);
+}
+@font-face {
+  font-family: gsm;
+  src: url(./GeneralSans-Medium.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html,
+body {
+  background: #000;
+}
+.main {
+  width: 80vw;
+  height: 100vh;
+  background: #25564f;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero {
+  background: #2d7167;
+  width: 80%;
+  height: 80%;
+  position: relative;
+  overflow: visible;
+}
+.hero .main-img {
+  height: 100%;
+  width: 60%;
+  position: absolute;
+  background-image: url(https://images.unsplash.com/photo-1570470836811-78ef04bb23d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZW5naW5lZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60);
+  background-position: center;
+  background-size: cover;
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+  left: 30%;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  background: #000;
+  opacity: 0.5;
+}
+.hero nav {
+  position: absolute;
+  height: 40%;
+  width: 40%;
+  /* background: blue; */
+  left: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav .logo a img {
+  width: 150px;
+  height: 150px;
+  background: red;
+  border-radius: 50%;
+}
+.hero span {
+  color: #fff;
+  font-family: "gsr";
+  text-transform: uppercase;
+}
+.hero .main-text {
+  position: absolute;
+  /* height: 40%; */
+  width: 50%;
+  /* background: red; */
+  bottom: 20%;
+  left: 5%;
+}
+.main-text .h1 {
+  font-family: "gsm";
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 50px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: #fff;
+}
+.hero .sub-img {
+  position: absolute;
+  width: 20%;
+  height: 60%;
+  background: red;
+  right: 5%;
+  top: 20%;
+  background-image: url(https://media.istockphoto.com/id/666968494/photo/female-architect-in-helmet.jpg?s=1024x1024&w=is&k=20&c=DDsUDt6_86V6GaBqK-t9iIO17EuOPp2319IJVT__8_w=);
+  background-size: cover;
+  background-position: center;
+}
+.vertical-text {
+  position: absolute;
+  /* background: red; */
+  right: -260px;
+  top: 42%;
+  /* transform: translateY(-80%); */
+  transform: rotate(90deg);
+}
+.vertical-text span {
+  font-size: 65px;
+  letter-spacing: 3px;
+  font-weight: 900;
+  font-family: "gsm";
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-fill-color: transparent;
+}
